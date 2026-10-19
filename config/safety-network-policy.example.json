@@ -1,0 +1,83 @@
+{
+  "schema_version": "windows-bootstrap-research-1",
+  "template_only": true,
+  "runtime_implemented": false,
+  "no_delete": {
+    "delete_user_files": false,
+    "clean_user_caches_or_downloads": false,
+    "uninstall_apps": false,
+    "format_or_repartition": false,
+    "overwrite_existing_projects": false,
+    "automatic_rollback_uninstall": false,
+    "automatic_cleanup_new_files": false,
+    "new_versioned_directories_only": true
+  },
+  "settings": {
+    "snapshot_before_change": true,
+    "changed_ledger_required": true,
+    "restore_original_not_generic_defaults": true,
+    "powershell_whatif_universally_assumed": false
+  },
+  "security": {
+    "disable_defender": false,
+    "add_defender_exclusions": false,
+    "disable_firewall": false,
+    "disable_smartscreen": false,
+    "disable_windows_update": false,
+    "disable_vbs": false,
+    "disable_memory_integrity": false,
+    "disable_tls_verify": false,
+    "automatic_admin_login": false,
+    "secrets_in_logs_or_issue": false
+  },
+  "network": {
+    "default_client": "Clash Verge Rev",
+    "alternative_client": "v2rayN",
+    "one_active_client": true,
+    "initial_mode": "system_proxy_then_per_process_if_needed",
+    "tun_default": false,
+    "tun_requires_explicit_privilege_authorization": true,
+    "legal_upstream_required": true,
+    "subscription_status": "user_input_pending",
+    "subscription_values_in_this_file": false,
+    "listen_address": "127.0.0.1",
+    "mixed_http_port": null,
+    "controller_port": null,
+    "allow_lan": false,
+    "localhost_bypass": [
+      "localhost",
+      "127.0.0.1",
+      "::1"
+    ],
+    "lan_bypass_syntax_requires_tool_specific_test": true,
+    "global_env_mutation_default": false,
+    "global_git_proxy_mutation_default": false,
+    "proxy_self_loop_allowed": false,
+    "third_party_subscription_conversion": false,
+    "restore_exact_original_proxy_and_dns": true
+  },
+  "startup": {
+    "local_worker_at_startup": true,
+    "gui_login_autostart_is_not_boot_service": true,
+    "network_jobs_wait_for_core_readiness": true,
+    "headless_network_validation": "not_run",
+    "offline_local_generation_if_inputs_cached": true
+  },
+  "power_proposal": {
+    "copy_original_scheme_first": true,
+    "preserve_original_scheme": true,
+    "ac_standby_timeout_minutes": 0,
+    "ac_monitor_timeout_minutes": 15,
+    "force_ultimate_performance": false,
+    "force_cpu_min_100_percent": false,
+    "delete_hibernation_file": false,
+    "apply_status": "not_run"
+  },
+  "video_inherited": {
+    "gpu_workers": 1,
+    "batch_size": 1,
+    "cloud_video_budget_usd": 0,
+    "h3_us_output_license_gate": "pending",
+    "automatic_publishing": false
+  }
+}

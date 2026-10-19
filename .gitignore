@@ -1,0 +1,26 @@
+# Local credentials and generated machine state never belong in this repo.
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+profiles/
+inventory/
+logs/
+backups/
+outputs/
+models/
+.venv/
+__pycache__/
+*.pyc
+*.exe
+*.msi
+*.msix
+*.msixbundle
+*.safetensors
+*.ckpt
+*.pow
+*.reg
+*.pfx
+*.key
+.DS_Store

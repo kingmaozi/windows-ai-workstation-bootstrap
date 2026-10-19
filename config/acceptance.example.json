@@ -1,0 +1,31 @@
+{
+  "schema_version": "windows-bootstrap-research-1",
+  "template_only": true,
+  "target_windows_accessed": false,
+  "checks": {
+    "os_workstation_edition_and_32gb_inventory": "not_run",
+    "official_client_asset_hash": "not_run",
+    "runtime_dependencies": "not_run",
+    "legal_subscription_entered_locally": "pending_user_input",
+    "browser_network": "not_run",
+    "git_network": "not_run",
+    "python_package_index": "not_run",
+    "huggingface_official_small_file": "not_run",
+    "zcode_real_request": "not_run",
+    "comfyui_loopback_and_lan": "not_run",
+    "proxy_dns_exit_restore_original": "not_run",
+    "gui_closed_and_logged_out_network": "not_run",
+    "restart_login_screen_readiness": "not_run",
+    "no_delete_sample_file_check": "not_run",
+    "settings_rollback_trial": "not_run",
+    "cuda_inference": "not_run",
+    "golden_clip": "not_run",
+    "soak_2h_8h_24h_72h": "not_run"
+  },
+  "remaining_policy_gates": [
+    "H3_US_output_commercial_authorization",
+    "manual_content_review",
+    "reboot_and_firmware_human_authorization"
+  ],
+  "static_bundle_validation_does_not_satisfy_target_checks": true
+}

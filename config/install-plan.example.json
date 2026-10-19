@@ -1,0 +1,111 @@
+{
+  "schema_version": "windows-bootstrap-research-1",
+  "template_only": true,
+  "is_native_winget_manifest": false,
+  "not_executable": true,
+  "policy": {
+    "install_missing_only": true,
+    "skip_existing": true,
+    "automatic_upgrade": false,
+    "automatic_uninstall": false,
+    "automatic_reboot": false,
+    "auto_accept_licenses": false,
+    "force_install": false,
+    "ignore_hash_failure": false,
+    "third_party_installers_can_write_their_own_files": true
+  },
+  "order": [
+    "read_only_inventory",
+    "official_client_offline_bootstrap_if_needed",
+    "user_enters_legal_subscription_locally",
+    "bootstrap_network_using_builtin_browser_or_curl",
+    "winget_show_review_each_package",
+    "serial_missing_package_install",
+    "application_network_validation_after_tools_exist",
+    "comfyui_loopback_validation_after_engine_start",
+    "actual_version_and_business_test",
+    "implement_public_video_pipeline_spec"
+  ],
+  "packages": [
+    {
+      "id": "ClashVergeRev.ClashVergeRev",
+      "role": "default_proxy_client",
+      "source": "winget",
+      "official_repo": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "selection": "one_client_only",
+      "offline_first_allowed": true
+    },
+    {
+      "id": "Git.Git",
+      "role": "git",
+      "source": "winget",
+      "install_when": "missing"
+    },
+    {
+      "id": "GitHub.cli",
+      "role": "private_issue_and_repo_access",
+      "source": "winget",
+      "install_when": "missing",
+      "oauth_requires_user": true
+    },
+    {
+      "id": "Python.Python.3.12",
+      "role": "isolated_comfyui_compatibility_start",
+      "source": "winget",
+      "install_when": "no_compatible_interpreter",
+      "keep_existing_path": true,
+      "version_requires_current_security_review": true
+    },
+    {
+      "id": "Gyan.FFmpeg",
+      "role": "video_composition_and_ffprobe",
+      "source": "winget",
+      "install_when": "missing",
+      "build_license_review_required": true
+    },
+    {
+      "id": "Microsoft.VCRedist.2015+.x64",
+      "role": "native_runtime_if_needed",
+      "source": "winget",
+      "open_source": false,
+      "install_when": "required_and_missing"
+    }
+  ],
+  "manual_official_downloads": [
+    {
+      "name": "ZCode",
+      "url": "https://zcode.z.ai/en/docs/install",
+      "winget_id_verified": false
+    },
+    {
+      "name": "NVIDIA_Studio_Driver",
+      "url": "https://www.nvidia.com/download/index.aspx",
+      "driver_version": null
+    },
+    {
+      "name": "ASUS_Z790_APEX_drivers",
+      "url": "https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z790-apex-model/helpdesk_download/",
+      "exact_model_required": true
+    }
+  ],
+  "not_default_installs": [
+    "WinUtil",
+    "Win11Debloat",
+    "SophiaScript",
+    "WSL2",
+    "Docker",
+    "UniGetUI",
+    "second_proxy_client",
+    "runtime_bundle",
+    "CUDA_Toolkit_without_extension_need"
+  ],
+  "example_reviewed_install_args": [
+    "install",
+    "--id",
+    "Git.Git",
+    "--exact",
+    "--source",
+    "winget",
+    "--no-upgrade"
+  ]
+}

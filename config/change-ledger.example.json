@@ -1,0 +1,37 @@
+{
+  "schema_version": "windows-bootstrap-research-1",
+  "template_only": true,
+  "executed": false,
+  "change_id": "EXAMPLE-NOT-AN-EXECUTED-CHANGE",
+  "timestamp": null,
+  "scope": "power_scheme_copy_ac_only",
+  "reason": "avoid_sleep_during_approved_local_video_jobs",
+  "authorization_reference": "user_requested_safe_initialization_not_firmware_or_deletion",
+  "before": {
+    "active_scheme_guid": null,
+    "query_file": null,
+    "export_pow_path": null,
+    "hash_sha256": null
+  },
+  "action": {
+    "create_copy_guid": null,
+    "command_file": null,
+    "writes_user_documents": false,
+    "requires_uac": null,
+    "requires_reboot": false
+  },
+  "after": {
+    "active_scheme_guid": null,
+    "query_file": null,
+    "validated_on_target": false
+  },
+  "rollback": {
+    "preview_only_by_default": true,
+    "restore_active_original_guid": null,
+    "delete_new_scheme_or_files": false,
+    "validation_result": "not_run"
+  },
+  "sensitive_backup_reference_only": true,
+  "secrets_must_not_be_embedded": true,
+  "result": "not_run"
+}

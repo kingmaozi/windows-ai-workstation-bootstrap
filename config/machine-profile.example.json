@@ -1,0 +1,31 @@
+{
+  "schema_version": "windows-bootstrap-research-1",
+  "template_only": true,
+  "observed_on_target": false,
+  "facts_source": "user_confirmed_not_hardware_inventory",
+  "os_selected": "Windows 11 Pro for Workstations x64",
+  "os_release_build": null,
+  "edition_change_authorized": false,
+  "clean_install_authorized": false,
+  "motherboard": "ASUS ROG MAXIMUS Z790 APEX",
+  "cpu": "Intel Core i9-13900KS",
+  "gpu": "RTX 4090",
+  "vram_gb": 24,
+  "cooling": "water_cooled_exact_model_not_verified",
+  "ram": {
+    "total_gb": 32,
+    "modules": 2,
+    "module_gb": 16,
+    "reported_profile": "DDR5-8000 CL36",
+    "actual_running_speed_verified": false,
+    "part_numbers": [],
+    "xmp_change_authorized": false
+  },
+  "bios": null,
+  "nvidia_driver": null,
+  "data_root": null,
+  "disk_inventory_required": true,
+  "subscription_configured": false,
+  "network_status": "not_tested",
+  "video_production_status": "not_deployed"
+}
